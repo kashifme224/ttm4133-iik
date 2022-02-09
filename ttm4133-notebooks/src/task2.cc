@@ -465,7 +465,7 @@ int main (int argc, char *argv[])
       // lteHelper->SetPathlossModelAttribute("ReferenceDistance", DoubleValue (10));
       // lteHelper->SetPathlossModelAttribute("Frequency", DoubleValue (2120000000));
 
-      // lteHelper->SetAttribute ("PathlossModel", StringValue ("ns3::ThreeLogDistancePropagationLossModel"));
+      lteHelper->SetAttribute ("PathlossModel", StringValue ("ns3::ThreeLogDistancePropagationLossModel"));
       // lteHelper->SetPathlossModelAttribute("Exponent0", DoubleValue (1.0));
       // lteHelper->SetPathlossModelAttribute("Exponent1", DoubleValue (3.0));
       // lteHelper->SetPathlossModelAttribute("Exponent2", DoubleValue (10.0));
