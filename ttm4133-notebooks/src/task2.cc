@@ -193,7 +193,7 @@ Throughput (Time binSize)
 int main (int argc, char *argv[])
 {
   double enbDist = 300.0;
-  double radius = enbDist/1;
+
   uint32_t numUes = 2;
   double simTime = 20; //  Time timeRes = MilliSeconds (10); // time resolution
   //  double speed = 500;       // m/s
@@ -204,12 +204,12 @@ int main (int argc, char *argv[])
   double hEnb = 30.0;
   double hUe = 1.0;
 
+    
   bool enablersrp = false, enablesinrenb = false, enablesinrue = false;
   bool enableRem = false, enableflowstats = false, enableTraces = true;
   bool enablebuilding = true, enableInstTput=false;
   CommandLine cmd (__FILE__);
   cmd.AddValue ("enbDist", "distance between the two eNBs", enbDist);
-  cmd.AddValue ("radius", "the radius of the disc where UEs are placed around an eNB", radius);
   cmd.AddValue ("numUes", "how many UEs are attached to each eNB", numUes);
   cmd.AddValue ("eNBTxPowerDbm", "base station power level", eNBTxPowerDbm);
   cmd.AddValue ("enableflowstats", "get flow stats", enableflowstats);
@@ -222,8 +222,12 @@ int main (int argc, char *argv[])
 
   cmd.Parse (argc, argv);
 
+    
   ConfigStore inputConfig;
   inputConfig.ConfigureDefaults ();
+    
+
+  double radius = enbDist/1;
 
   Ptr<UniformRandomVariable> enbNoise = CreateObject<UniformRandomVariable> ();
   enbNoise->SetAttribute ("Min", DoubleValue (1));
@@ -410,13 +414,13 @@ int main (int argc, char *argv[])
   mmUe2->SetPosition (Vector (-(6*radius)/7, -(6*radius)/7, hUe));
   wayMobility->SetPosition(Vector (-(6*radius)/7, (6*radius)/7, hUe));
 
-//
-//  if(enablebuilding)
-//    {
-//      BuildingsHelper::Install (enbNodes);
-//      BuildingsHelper::Install (ueNodes1);
-//      BuildingsHelper::Install (movingueNodes);
-//    }
+
+ if(enablebuilding)
+   {
+     // BuildingsHelper::Install (enbNodes);
+     // BuildingsHelper::Install (ueNodes1);
+     // BuildingsHelper::Install (movingueNodes);
+   }
 
 
 
@@ -456,8 +460,18 @@ int main (int argc, char *argv[])
     }
   else
     {
-      lteHelper->SetAttribute ("PathlossModel", StringValue ("ns3::ThreeLogDistancePropagationLossModel"));
+      // lteHelper->SetAttribute ("PathlossModel", StringValue ("ns3::LogDistancePropagationLossModel"));
+      // lteHelper->SetPathlossModelAttribute("Exponent", DoubleValue (3.0));
+      // lteHelper->SetPathlossModelAttribute("ReferenceDistance", DoubleValue (10));
+      // lteHelper->SetPathlossModelAttribute("Frequency", DoubleValue (2120000000));
 
+      // lteHelper->SetAttribute ("PathlossModel", StringValue ("ns3::ThreeLogDistancePropagationLossModel"));
+      // lteHelper->SetPathlossModelAttribute("Exponent0", DoubleValue (1.0));
+      // lteHelper->SetPathlossModelAttribute("Exponent1", DoubleValue (3.0));
+      // lteHelper->SetPathlossModelAttribute("Exponent2", DoubleValue (10.0));
+      // lteHelper->SetPathlossModelAttribute("Distance0", DoubleValue (100));
+      // lteHelper->SetPathlossModelAttribute("Distance1", DoubleValue (200));
+      // lteHelper->SetPathlossModelAttribute("Distance2", DoubleValue (400));
 //      lteHelper->SetAttribute ("PathlossModel", StringValue ("ns3::NakagamiPropagationLossModel"));
 //      lteHelper->SetAttribute ("PathlossModel", StringValue ("ns3::NakagamiPropagationLossModel"));
 //      channelHelper.AddPropagationLoss(fastFadingLModel);

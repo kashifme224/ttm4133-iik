@@ -173,33 +173,48 @@ def eval_snr(exa,r):
 
         if scellid == 1:
             if srnti == 1:
-                snr11.append(float(scol[3]))
+                # snr11.append(float(scol[3]))
+                snr11.append(float(scol[4]))
                 st11.append(scol[0])
             elif srnti == 2:
-                snr12.append(float(scol[3]))
+                # snr12.append(float(scol[3]))
+                snr12.append(float(scol[4]))
                 st12.append(scol[0])
             elif srnti == 3:
-                snr13.append(float(scol[3]))
+                # snr13.append(float(scol[3]))
+                snr13.append(float(scol[4]))
                 st13.append(scol[0])
         elif scellid == 2:
             if srnti == 1:
-                snr21.append(float(scol[3]))
+                # snr21.append(float(scol[3]))
+                snr21.append(float(scol[4]))
+
                 st21.append(scol[0])
             elif srnti == 2:
-                snr22.append(float(scol[3]))
+                # snr22.append(float(scol[3]))
+                snr22.append(float(scol[4]))
+
                 st22.append(scol[0])
             elif srnti == 3:
-                snr23.append(float(scol[3]))
+                # snr23.append(float(scol[3]))
+                snr23.append(float(scol[4]))
+
                 st23.append(scol[0])
         elif scellid == 3:
             if srnti == 1:
-                snr31.append(float(scol[3]))
+                # snr31.append(float(scol[3]))
+                snr31.append(float(scol[4]))
+
                 st31.append(scol[0])
             elif srnti == 2:
-                snr32.append(float(scol[3]))
+                # snr32.append(float(scol[3]))
+                snr32.append(float(scol[4]))
+
                 st32.append(scol[0])
             elif srnti == 3:
-                snr33.append(float(scol[3]))
+                # snr33.append(float(scol[3]))
+                snr33.append(float(scol[4]))
+
                 st33.append(scol[0])
                 
 
@@ -230,8 +245,8 @@ def eval_snr(exa,r):
 
 def preprocess_file1(dat):
     for i in range(len(dat)):
-        num = dat[i]
-        res11 = eval_snr(num, i)
+        num1 = dat[i]
+        res11 = eval_snr(num1, i)
 
 
     return res11

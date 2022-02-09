@@ -22,7 +22,8 @@ elif args[3] == 'False':
     building = False
     apnd = 'rural'
 
-
+print("Simulation started with parameters: ", txpower, radius, building) 
+    
 #for rsrp values
 ########################################################################################
 ns_path = os.path.join(os.path.expanduser('~'), 'repos', 'sem-example', 'ns-3')
@@ -58,7 +59,7 @@ params1 = {
     'eNBTxPowerDbm': txpower,
     'enbDist': radius,
     'enablebuilding': building,
-    'enablesinrenb': True,
+    'enablesinrue': True,
 }
 runs1 = 1
 
@@ -88,3 +89,4 @@ runs2 = 1
 
 campaign2.run_missing_simulations(params2, runs=runs2)
 ########################################################################################
+print("Simulations Finished")
