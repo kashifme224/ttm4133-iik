@@ -1,0 +1,186 @@
+####################################################
+RAN Connection Setup Logs [MAC, RRC for eNB and UE]
+####################################################
++0.000000000s -1 LteUeRrc:SwitchToState(): [INFO ] 0x556d87996840 IMSI 1 RNTI 0 UeRrc IDLE_START --> IDLE_CELL_SEARCH
++0.000000000s -1 LteUeRrc:SwitchToState(): [INFO ] 0x556d87ae9970 IMSI 2 RNTI 0 UeRrc IDLE_START --> IDLE_CELL_SEARCH
++0.000000000s -1 LteUeRrc:SwitchToState(): [INFO ] 0x556d87aece60 IMSI 3 RNTI 0 UeRrc IDLE_START --> IDLE_CELL_SEARCH
++0.200000000s -1 LteUeRrc:SwitchToState(): [INFO ] 0x556d87996840 IMSI 1 RNTI 0 UeRrc IDLE_CELL_SEARCH --> IDLE_WAIT_MIB_SIB1
++0.200000000s -1 LteUeRrc:SwitchToState(): [INFO ] 0x556d87ae9970 IMSI 2 RNTI 0 UeRrc IDLE_CELL_SEARCH --> IDLE_WAIT_MIB_SIB1
++0.200000000s -1 LteUeRrc:SwitchToState(): [INFO ] 0x556d87aece60 IMSI 3 RNTI 0 UeRrc IDLE_CELL_SEARCH --> IDLE_WAIT_MIB_SIB1
++0.200214285s 5 LteUeRrc:SwitchToState(): [INFO ] 0x556d87996840 IMSI 1 RNTI 0 UeRrc IDLE_WAIT_MIB_SIB1 --> IDLE_WAIT_SIB1
++0.200214285s 6 LteUeRrc:SwitchToState(): [INFO ] 0x556d87ae9970 IMSI 2 RNTI 0 UeRrc IDLE_WAIT_MIB_SIB1 --> IDLE_WAIT_SIB1
++0.200214285s 7 LteUeRrc:SwitchToState(): [INFO ] 0x556d87aece60 IMSI 3 RNTI 0 UeRrc IDLE_WAIT_MIB_SIB1 --> IDLE_WAIT_SIB1
++0.205214285s 5 LteUeRrc:SwitchToState(): [INFO ] 0x556d87996840 IMSI 1 RNTI 0 UeRrc IDLE_WAIT_SIB1 --> IDLE_CAMPED_NORMALLY
++0.205214285s 5 LteUeRrc:SwitchToState(): [INFO ] 0x556d87996840 IMSI 1 RNTI 0 UeRrc IDLE_CAMPED_NORMALLY --> IDLE_WAIT_SIB2
++0.205214285s 6 LteUeRrc:SwitchToState(): [INFO ] 0x556d87ae9970 IMSI 2 RNTI 0 UeRrc IDLE_WAIT_SIB1 --> IDLE_CAMPED_NORMALLY
++0.205214285s 6 LteUeRrc:SwitchToState(): [INFO ] 0x556d87ae9970 IMSI 2 RNTI 0 UeRrc IDLE_CAMPED_NORMALLY --> IDLE_WAIT_SIB2
++0.205214285s 7 LteUeRrc:SwitchToState(): [INFO ] 0x556d87aece60 IMSI 3 RNTI 0 UeRrc IDLE_WAIT_SIB1 --> IDLE_CAMPED_NORMALLY
++0.205214285s 7 LteUeRrc:SwitchToState(): [INFO ] 0x556d87aece60 IMSI 3 RNTI 0 UeRrc IDLE_CAMPED_NORMALLY --> IDLE_WAIT_SIB2
++0.256000000s -1 LteUeRrc:SwitchToState(): [INFO ] 0x556d87996840 IMSI 1 RNTI 0 UeRrc IDLE_WAIT_SIB2 --> IDLE_RANDOM_ACCESS
++0.256000000s -1 LteUeRrc:SwitchToState(): [INFO ] 0x556d87ae9970 IMSI 2 RNTI 0 UeRrc IDLE_WAIT_SIB2 --> IDLE_RANDOM_ACCESS
++0.256000000s -1 LteUeRrc:SwitchToState(): [INFO ] 0x556d87aece60 IMSI 3 RNTI 0 UeRrc IDLE_WAIT_SIB2 --> IDLE_RANDOM_ACCESS
++0.258000000s 4 LteEnbMac:DoSubframeIndication(): [INFO ] 0x556d87acbae0 preambleId 0: 1 received
++0.258000000s 4 LteEnbRrc:GetNewSrsConfigurationIndex(): [DEBUG] 0x556d87acc4a0 SRS p 40 set 0
++0.258000000s 4 LteEnbRrc:AddUe(): [DEBUG] 0x556d87acc4a0 New UE RNTI 1 cellId 1 srs CI 37
++0.258000000s 4 LteEnbMac:DoSubframeIndication(): [INFO ] preambleId 0: allocated T-C-RNTI 1, sending RAR
++0.258000000s 4 LteEnbMac:DoSubframeIndication(): [INFO ] 0x556d87acbae0 preambleId 11: 1 received
++0.258000000s 4 LteEnbRrc:GetNewSrsConfigurationIndex(): [DEBUG] 0x556d87acc4a0 SRS p 40 set 1
++0.258000000s 4 LteEnbRrc:GetNewSrsConfigurationIndex(): [DEBUG] 0x556d87acc4a0 lower bound 37 of 76
++0.258000000s 4 LteEnbRrc:AddUe(): [DEBUG] 0x556d87acc4a0 New UE RNTI 2 cellId 1 srs CI 38
++0.258000000s 4 LteEnbMac:DoSubframeIndication(): [INFO ] preambleId 11: allocated T-C-RNTI 2, sending RAR
++0.258000000s 4 LteEnbMac:DoSubframeIndication(): [INFO ] 0x556d87acbae0 preambleId 14: 1 received
++0.258000000s 4 LteEnbRrc:GetNewSrsConfigurationIndex(): [DEBUG] 0x556d87acc4a0 SRS p 40 set 2
++0.258000000s 4 LteEnbRrc:GetNewSrsConfigurationIndex(): [DEBUG] 0x556d87acc4a0 lower bound 38 of 76
++0.258000000s 4 LteEnbRrc:AddUe(): [DEBUG] 0x556d87acc4a0 New UE RNTI 3 cellId 1 srs CI 39
++0.258000000s 4 LteEnbMac:DoSubframeIndication(): [INFO ] preambleId 14: allocated T-C-RNTI 3, sending RAR
++0.258000000s 4 LteEnbMac:DoSchedDlConfigInd(): [INFO ] 0x556d87acbae0 Send RAR message to RNTI 1 rapId 0
++0.258000000s 4 LteEnbMac:DoSchedDlConfigInd(): [INFO ] 0x556d87acbae0 Send RAR message to RNTI 2 rapId 11
++0.258000000s 4 LteEnbMac:DoSchedDlConfigInd(): [INFO ] 0x556d87acbae0 Send RAR message to RNTI 3 rapId 14
++0.260214285s 5 LteUeRrc:SwitchToState(): [INFO ] 0x556d87996840 IMSI 1 RNTI 1 UeRrc IDLE_RANDOM_ACCESS --> IDLE_CONNECTING
++0.260214285s 5 LteRrcProtocolIdeal:SetEnbRrcSapProvider(): [DEBUG] RNTI 1 connected to cell 1
++0.260214285s 6 LteUeRrc:SwitchToState(): [INFO ] 0x556d87ae9970 IMSI 2 RNTI 3 UeRrc IDLE_RANDOM_ACCESS --> IDLE_CONNECTING
++0.260214285s 6 LteRrcProtocolIdeal:SetEnbRrcSapProvider(): [DEBUG] RNTI 3 connected to cell 1
++0.260214285s 7 LteUeRrc:SwitchToState(): [INFO ] 0x556d87aece60 IMSI 3 RNTI 2 UeRrc IDLE_RANDOM_ACCESS --> IDLE_CONNECTING
++0.260214285s 7 LteRrcProtocolIdeal:SetEnbRrcSapProvider(): [DEBUG] RNTI 2 connected to cell 1
++0.260214285s 5 LteUeRrc:SwitchToState(): [INFO ] 0x556d87996840 IMSI 1 RNTI 1 UeRrc IDLE_CONNECTING --> CONNECTED_NORMALLY
++0.260214285s 6 LteUeRrc:SwitchToState(): [INFO ] 0x556d87ae9970 IMSI 2 RNTI 3 UeRrc IDLE_CONNECTING --> CONNECTED_NORMALLY
++0.260214285s 7 LteUeRrc:SwitchToState(): [INFO ] 0x556d87aece60 IMSI 3 RNTI 2 UeRrc IDLE_CONNECTING --> CONNECTED_NORMALLY
++0.260214785s 2 LteEnbRrc:SetupDataRadioBearer(): [DEBUG] 0x556d879f3ac0 RNTI 1Lcid 3 lcGroup 2 ComponentCarrierId 0
++0.260214785s 2 LteUeRrc:DoRecvRrcConnectionReconfiguration(): [INFO ] DoRecvRrcConnectionReconfiguration haveNonCriticalExtension:0
++0.260214785s 2 LteUeRrc:DoRecvRrcConnectionReconfiguration(): [INFO ] haveMobilityControlInfo == false
++0.260214785s 2 LteUeRrc:ApplyRadioResourceConfigDedicated(): [INFO ] request to modify SRB1 (skipping as currently not implemented)
++0.260214785s 2 LteUeRrc:ApplyRadioResourceConfigDedicated(): [INFO ] 0x556d87996840 IMSI 1 adding/modifying DRBID 1 LC 3
++0.260214785s 2 LteUeRrc:ApplyRadioResourceConfigDedicated(): [INFO ] New Data Radio Bearer
++0.260214785s 2 LteRrcProtocolIdeal:SetEnbRrcSapProvider(): [DEBUG] RNTI 1 connected to cell 1
++0.260214917s 2 LteEnbRrc:SetupDataRadioBearer(): [DEBUG] 0x556d879f3920 RNTI 3Lcid 3 lcGroup 2 ComponentCarrierId 0
++0.260214917s 2 LteUeRrc:DoRecvRrcConnectionReconfiguration(): [INFO ] DoRecvRrcConnectionReconfiguration haveNonCriticalExtension:0
++0.260214917s 2 LteUeRrc:DoRecvRrcConnectionReconfiguration(): [INFO ] haveMobilityControlInfo == false
++0.260214917s 2 LteUeRrc:ApplyRadioResourceConfigDedicated(): [INFO ] request to modify SRB1 (skipping as currently not implemented)
++0.260214917s 2 LteUeRrc:ApplyRadioResourceConfigDedicated(): [INFO ] 0x556d87ae9970 IMSI 2 adding/modifying DRBID 1 LC 3
++0.260214917s 2 LteUeRrc:ApplyRadioResourceConfigDedicated(): [INFO ] New Data Radio Bearer
++0.260214917s 2 LteRrcProtocolIdeal:SetEnbRrcSapProvider(): [DEBUG] RNTI 3 connected to cell 1
++0.260215049s 2 LteEnbRrc:SetupDataRadioBearer(): [DEBUG] 0x556d879f1ab0 RNTI 2Lcid 3 lcGroup 2 ComponentCarrierId 0
++0.260215049s 2 LteUeRrc:DoRecvRrcConnectionReconfiguration(): [INFO ] DoRecvRrcConnectionReconfiguration haveNonCriticalExtension:0
++0.260215049s 2 LteUeRrc:DoRecvRrcConnectionReconfiguration(): [INFO ] haveMobilityControlInfo == false
++0.260215049s 2 LteUeRrc:ApplyRadioResourceConfigDedicated(): [INFO ] request to modify SRB1 (skipping as currently not implemented)
++0.260215049s 2 LteUeRrc:ApplyRadioResourceConfigDedicated(): [INFO ] 0x556d87aece60 IMSI 3 adding/modifying DRBID 1 LC 3
++0.260215049s 2 LteUeRrc:ApplyRadioResourceConfigDedicated(): [INFO ] New Data Radio Bearer
++0.260215049s 2 LteRrcProtocolIdeal:SetEnbRrcSapProvider(): [DEBUG] RNTI 2 connected to cell 1
++0.460214285s 6 LteUeRrc:DoNotifyOutOfSync(): [INFO ] 0x556d87ae9970 Total Number of Sync indications from PHY 1N310 value : 6
++0.660214285s 6 LteUeRrc:DoNotifyOutOfSync(): [INFO ] 0x556d87ae9970 Total Number of Sync indications from PHY 2N310 value : 6
++0.860214285s 6 LteUeRrc:DoNotifyOutOfSync(): [INFO ] 0x556d87ae9970 Total Number of Sync indications from PHY 3N310 value : 6
++1.060214285s 6 LteUeRrc:DoNotifyOutOfSync(): [INFO ] 0x556d87ae9970 Total Number of Sync indications from PHY 4N310 value : 6
++1.260214285s 6 LteUeRrc:DoNotifyOutOfSync(): [INFO ] 0x556d87ae9970 Total Number of Sync indications from PHY 5N310 value : 6
++1.460214285s 6 LteUeRrc:DoNotifyOutOfSync(): [INFO ] 0x556d87ae9970 Total Number of Sync indications from PHY 6N310 value : 6
++1.460214285s 6 LteUeRrc:DoNotifyOutOfSync(): [INFO ] t310 started
++2.460214285s 6 LteUeRrc:SwitchToState(): [INFO ] 0x556d87ae9970 IMSI 2 RNTI 3 UeRrc CONNECTED_NORMALLY --> CONNECTED_PHY_PROBLEM
++2.460214285s 6 LteRrcProtocolIdeal:DoSendIdealUeContextRemoveRequest(): [DEBUG] RNTI 3 sending UE context remove request to cell id 1
++2.460214285s 6 LteRrcProtocolIdeal:SetEnbRrcSapProvider(): [DEBUG] RNTI 3 connected to cell 1
++2.460214285s 6 LteUeRrc:SwitchToState(): [INFO ] 0x556d87ae9970 IMSI 2 RNTI 3 UeRrc CONNECTED_PHY_PROBLEM --> IDLE_START
++2.460214285s 6 LteUeRrc:SwitchToState(): [INFO ] Starting initial cell selection after RLF
++2.460214285s 6 LteUeRrc:SwitchToState(): [INFO ] 0x556d87ae9970 IMSI 2 RNTI 3 UeRrc IDLE_START --> IDLE_CELL_SEARCH
++2.460214285s 6 LteEnbRrc:RecvIdealUeContextRemoveRequest(): [DEBUG] Sending release of bearer id : 1LCID : 3
++2.600000000s -1 LteUeRrc:SwitchToState(): [INFO ] 0x556d87ae9970 IMSI 2 RNTI 0 UeRrc IDLE_CELL_SEARCH --> IDLE_WAIT_MIB_SIB1
++2.600214285s 6 LteUeRrc:SwitchToState(): [INFO ] 0x556d87ae9970 IMSI 2 RNTI 0 UeRrc IDLE_WAIT_MIB_SIB1 --> IDLE_WAIT_SIB1
++2.645214285s 6 LteUeRrc:SwitchToState(): [INFO ] 0x556d87ae9970 IMSI 2 RNTI 0 UeRrc IDLE_WAIT_SIB1 --> IDLE_CAMPED_NORMALLY
++2.645214285s 6 LteUeRrc:SwitchToState(): [INFO ] 0x556d87ae9970 IMSI 2 RNTI 0 UeRrc IDLE_CAMPED_NORMALLY --> IDLE_WAIT_SIB2
++2.656000000s -1 LteUeRrc:SwitchToState(): [INFO ] 0x556d87ae9970 IMSI 2 RNTI 0 UeRrc IDLE_WAIT_SIB2 --> IDLE_RANDOM_ACCESS
++2.658000000s 4 LteEnbMac:DoSubframeIndication(): [INFO ] 0x556d87acbae0 preambleId 10: 1 received
++2.658000000s 4 LteEnbRrc:GetNewSrsConfigurationIndex(): [DEBUG] 0x556d87acc4a0 SRS p 40 set 2
++2.658000000s 4 LteEnbRrc:GetNewSrsConfigurationIndex(): [DEBUG] 0x556d87acc4a0 lower bound 38 of 76
++2.658000000s 4 LteEnbRrc:AddUe(): [DEBUG] 0x556d87acc4a0 New UE RNTI 4 cellId 1 srs CI 39
++2.658000000s 4 LteEnbMac:DoSubframeIndication(): [INFO ] preambleId 10: allocated T-C-RNTI 4, sending RAR
++2.658000000s 4 LteEnbMac:DoSchedDlConfigInd(): [INFO ] 0x556d87acbae0 Send RAR message to RNTI 4 rapId 10
++2.660214285s 6 LteUeRrc:SwitchToState(): [INFO ] 0x556d87ae9970 IMSI 2 RNTI 4 UeRrc IDLE_RANDOM_ACCESS --> IDLE_CONNECTING
++2.660214285s 6 LteRrcProtocolIdeal:SetEnbRrcSapProvider(): [DEBUG] RNTI 4 connected to cell 1
++2.660214285s 6 LteUeRrc:SwitchToState(): [INFO ] 0x556d87ae9970 IMSI 2 RNTI 4 UeRrc IDLE_CONNECTING --> CONNECTED_NORMALLY
++2.660214785s 2 LteEnbRrc:SetupDataRadioBearer(): [DEBUG] 0x556d87bd3a30 RNTI 4Lcid 3 lcGroup 2 ComponentCarrierId 0
++2.660214785s 2 LteUeRrc:DoRecvRrcConnectionReconfiguration(): [INFO ] DoRecvRrcConnectionReconfiguration haveNonCriticalExtension:0
++2.660214785s 2 LteUeRrc:DoRecvRrcConnectionReconfiguration(): [INFO ] haveMobilityControlInfo == false
++2.660214785s 2 LteUeRrc:ApplyRadioResourceConfigDedicated(): [INFO ] request to modify SRB1 (skipping as currently not implemented)
++2.660214785s 2 LteUeRrc:ApplyRadioResourceConfigDedicated(): [INFO ] 0x556d87ae9970 IMSI 2 adding/modifying DRBID 1 LC 3
++2.660214785s 2 LteUeRrc:ApplyRadioResourceConfigDedicated(): [INFO ] New Data Radio Bearer
++2.660214785s 2 LteRrcProtocolIdeal:SetEnbRrcSapProvider(): [DEBUG] RNTI 4 connected to cell 1
++2.860214285s 6 LteUeRrc:DoNotifyOutOfSync(): [INFO ] 0x556d87ae9970 Total Number of Sync indications from PHY 1N310 value : 6
++3.060214285s 6 LteUeRrc:DoNotifyOutOfSync(): [INFO ] 0x556d87ae9970 Total Number of Sync indications from PHY 2N310 value : 6
++3.260214285s 6 LteUeRrc:DoNotifyOutOfSync(): [INFO ] 0x556d87ae9970 Total Number of Sync indications from PHY 3N310 value : 6
++3.460214285s 6 LteUeRrc:DoNotifyOutOfSync(): [INFO ] 0x556d87ae9970 Total Number of Sync indications from PHY 4N310 value : 6
++3.660214285s 6 LteUeRrc:DoNotifyOutOfSync(): [INFO ] 0x556d87ae9970 Total Number of Sync indications from PHY 5N310 value : 6
++3.860214285s 6 LteUeRrc:DoNotifyOutOfSync(): [INFO ] 0x556d87ae9970 Total Number of Sync indications from PHY 6N310 value : 6
++3.860214285s 6 LteUeRrc:DoNotifyOutOfSync(): [INFO ] t310 started
++4.860214285s 6 LteUeRrc:SwitchToState(): [INFO ] 0x556d87ae9970 IMSI 2 RNTI 4 UeRrc CONNECTED_NORMALLY --> CONNECTED_PHY_PROBLEM
++4.860214285s 6 LteRrcProtocolIdeal:DoSendIdealUeContextRemoveRequest(): [DEBUG] RNTI 4 sending UE context remove request to cell id 1
++4.860214285s 6 LteRrcProtocolIdeal:SetEnbRrcSapProvider(): [DEBUG] RNTI 4 connected to cell 1
++4.860214285s 6 LteUeRrc:SwitchToState(): [INFO ] 0x556d87ae9970 IMSI 2 RNTI 4 UeRrc CONNECTED_PHY_PROBLEM --> IDLE_START
++4.860214285s 6 LteUeRrc:SwitchToState(): [INFO ] Starting initial cell selection after RLF
++4.860214285s 6 LteUeRrc:SwitchToState(): [INFO ] 0x556d87ae9970 IMSI 2 RNTI 4 UeRrc IDLE_START --> IDLE_CELL_SEARCH
++4.860214285s 6 LteEnbRrc:RecvIdealUeContextRemoveRequest(): [DEBUG] Sending release of bearer id : 1LCID : 3
+
+
+####################################################
+EPC Connection Setup Logs [SGW, PGW, MME]
+####################################################
++0.260214285s 5 EpcMmeApplication:DoInitialUeMessage(): [DEBUG] BearerContextToBeCreated size = 1
++0.260214285s 5 EpcMmeApplication:DoInitialUeMessage(): [DEBUG] Send CreateSessionRequest to SGW 13.0.0.6
++0.260214285s 6 EpcMmeApplication:DoInitialUeMessage(): [DEBUG] BearerContextToBeCreated size = 1
++0.260214285s 6 EpcMmeApplication:DoInitialUeMessage(): [DEBUG] Send CreateSessionRequest to SGW 13.0.0.6
++0.260214285s 7 EpcMmeApplication:DoInitialUeMessage(): [DEBUG] BearerContextToBeCreated size = 1
++0.260214285s 7 EpcMmeApplication:DoInitialUeMessage(): [DEBUG] Send CreateSessionRequest to SGW 13.0.0.6
++0.260214549s 0 EpcPgwApplication:DoRecvCreateSessionRequest(): [DEBUG] cellId 1 IMSI 1
++0.260214549s 0 EpcPgwApplication:DoRecvCreateSessionRequest(): [DEBUG] BearerContextsToBeCreated size = 1
++0.260214549s 0 EpcPgwApplication:DoRecvCreateSessionRequest(): [DEBUG] bearerId 1 SGW 10.0.0.6 TEID 1
++0.260214549s 0 EpcPgwApplication:DoRecvCreateSessionRequest(): [DEBUG] BearerContextsCreated size = 1
++0.260214549s 0 EpcPgwApplication:DoRecvCreateSessionRequest(): [DEBUG] Send CreateSessionResponse to SGW 14.0.0.6
++0.260214681s 0 EpcPgwApplication:DoRecvCreateSessionRequest(): [DEBUG] cellId 1 IMSI 2
++0.260214681s 0 EpcPgwApplication:DoRecvCreateSessionRequest(): [DEBUG] BearerContextsToBeCreated size = 1
++0.260214681s 0 EpcPgwApplication:DoRecvCreateSessionRequest(): [DEBUG] bearerId 1 SGW 10.0.0.6 TEID 2
++0.260214681s 0 EpcPgwApplication:DoRecvCreateSessionRequest(): [DEBUG] BearerContextsCreated size = 1
++0.260214681s 0 EpcPgwApplication:DoRecvCreateSessionRequest(): [DEBUG] Send CreateSessionResponse to SGW 14.0.0.6
++0.260214785s 2 EpcMmeApplication:DoRecvCreateSessionResponse(): [DEBUG] TEID/IMSI 1
++0.260214785s 2 EpcMmeApplication:DoRecvCreateSessionResponse(): [DEBUG] cellId 1 mmeUeS1Id 1 enbUeS1Id 0
++0.260214785s 2 EpcMmeApplication:DoRecvCreateSessionResponse(): [DEBUG] BearerContextsCreated size = 1
++0.260214785s 2 EpcMmeApplication:DoRecvCreateSessionResponse(): [DEBUG] SGW 14.0.0.5 TEID 1
++0.260214785s 2 EpcMmeApplication:DoRecvCreateSessionResponse(): [DEBUG] Send InitialContextSetupRequest to eNB 0x557bda042e20
++0.260214813s 0 EpcPgwApplication:DoRecvCreateSessionRequest(): [DEBUG] cellId 1 IMSI 3
++0.260214813s 0 EpcPgwApplication:DoRecvCreateSessionRequest(): [DEBUG] BearerContextsToBeCreated size = 1
++0.260214813s 0 EpcPgwApplication:DoRecvCreateSessionRequest(): [DEBUG] bearerId 1 SGW 10.0.0.6 TEID 3
++0.260214813s 0 EpcPgwApplication:DoRecvCreateSessionRequest(): [DEBUG] BearerContextsCreated size = 1
++0.260214813s 0 EpcPgwApplication:DoRecvCreateSessionRequest(): [DEBUG] Send CreateSessionResponse to SGW 14.0.0.6
++0.260214917s 2 EpcMmeApplication:DoRecvCreateSessionResponse(): [DEBUG] TEID/IMSI 2
++0.260214917s 2 EpcMmeApplication:DoRecvCreateSessionResponse(): [DEBUG] cellId 1 mmeUeS1Id 2 enbUeS1Id 0
++0.260214917s 2 EpcMmeApplication:DoRecvCreateSessionResponse(): [DEBUG] BearerContextsCreated size = 1
++0.260214917s 2 EpcMmeApplication:DoRecvCreateSessionResponse(): [DEBUG] SGW 14.0.0.5 TEID 2
++0.260214917s 2 EpcMmeApplication:DoRecvCreateSessionResponse(): [DEBUG] Send InitialContextSetupRequest to eNB 0x557bda042e20
++0.260215049s 2 EpcMmeApplication:DoRecvCreateSessionResponse(): [DEBUG] TEID/IMSI 3
++0.260215049s 2 EpcMmeApplication:DoRecvCreateSessionResponse(): [DEBUG] cellId 1 mmeUeS1Id 3 enbUeS1Id 0
++0.260215049s 2 EpcMmeApplication:DoRecvCreateSessionResponse(): [DEBUG] BearerContextsCreated size = 1
++0.260215049s 2 EpcMmeApplication:DoRecvCreateSessionResponse(): [DEBUG] SGW 14.0.0.5 TEID 3
++0.260215049s 2 EpcMmeApplication:DoRecvCreateSessionResponse(): [DEBUG] Send InitialContextSetupRequest to eNB 0x557bda042e20
++2.460214285s 6 EpcMmeApplication:DoErabReleaseIndication(): [DEBUG] erabId 1
++2.460214285s 6 EpcMmeApplication:DoErabReleaseIndication(): [DEBUG] Send DeleteBearerCommand to SGW 13.0.0.6
++2.460214285s 6 EpcEnbApplication:DoUeContextRelease(): [INFO ] TEID: 2 erased
++2.460214285s 6 EpcEnbApplication:DoUeContextRelease(): [INFO ] RNTI: 3 erased
++2.460214365s 0 EpcPgwApplication:DoRecvDeleteBearerCommand(): [DEBUG] ebid 1
++2.460214365s 0 EpcPgwApplication:DoRecvDeleteBearerCommand(): [DEBUG] Send DeleteBearerRequest to SGW 14.0.0.6
++2.460214439s 2 EpcMmeApplication:DoRecvDeleteBearerRequest(): [DEBUG] TEID/IMSI 2
++2.460214439s 2 EpcMmeApplication:DoRecvDeleteBearerRequest(): [DEBUG] Send DeleteBearerResponse to SGW 13.0.0.6
++2.660214285s 6 EpcMmeApplication:DoInitialUeMessage(): [DEBUG] BearerContextToBeCreated size = 1
++2.660214285s 6 EpcMmeApplication:DoInitialUeMessage(): [DEBUG] Send CreateSessionRequest to SGW 13.0.0.6
++2.660214549s 0 EpcPgwApplication:DoRecvCreateSessionRequest(): [DEBUG] cellId 1 IMSI 2
++2.660214549s 0 EpcPgwApplication:DoRecvCreateSessionRequest(): [DEBUG] BearerContextsToBeCreated size = 1
++2.660214549s 0 EpcPgwApplication:DoRecvCreateSessionRequest(): [DEBUG] bearerId 1 SGW 10.0.0.6 TEID 4
++2.660214549s 0 EpcPgwApplication:DoRecvCreateSessionRequest(): [DEBUG] BearerContextsCreated size = 1
++2.660214549s 0 EpcPgwApplication:DoRecvCreateSessionRequest(): [DEBUG] Send CreateSessionResponse to SGW 14.0.0.6
++2.660214785s 2 EpcMmeApplication:DoRecvCreateSessionResponse(): [DEBUG] TEID/IMSI 2
++2.660214785s 2 EpcMmeApplication:DoRecvCreateSessionResponse(): [DEBUG] cellId 1 mmeUeS1Id 2 enbUeS1Id 0
++2.660214785s 2 EpcMmeApplication:DoRecvCreateSessionResponse(): [DEBUG] BearerContextsCreated size = 1
++2.660214785s 2 EpcMmeApplication:DoRecvCreateSessionResponse(): [DEBUG] SGW 14.0.0.5 TEID 4
++2.660214785s 2 EpcMmeApplication:DoRecvCreateSessionResponse(): [DEBUG] Send InitialContextSetupRequest to eNB 0x557bda042e20
++4.860214285s 6 EpcMmeApplication:DoErabReleaseIndication(): [DEBUG] erabId 1
++4.860214285s 6 EpcMmeApplication:DoErabReleaseIndication(): [DEBUG] Send DeleteBearerCommand to SGW 13.0.0.6
++4.860214285s 6 EpcEnbApplication:DoUeContextRelease(): [INFO ] TEID: 4 erased
++4.860214285s 6 EpcEnbApplication:DoUeContextRelease(): [INFO ] RNTI: 4 erased
++4.860214365s 0 EpcPgwApplication:DoRecvDeleteBearerCommand(): [DEBUG] ebid 1
++4.860214365s 0 EpcPgwApplication:DoRecvDeleteBearerCommand(): [DEBUG] Send DeleteBearerRequest to SGW 14.0.0.6
++4.860214439s 2 EpcMmeApplication:DoRecvDeleteBearerRequest(): [DEBUG] TEID/IMSI 2
++4.860214439s 2 EpcMmeApplication:DoRecvDeleteBearerRequest(): [DEBUG] Send DeleteBearerResponse to SGW 13.0.0.6
